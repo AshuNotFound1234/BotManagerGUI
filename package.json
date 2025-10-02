@@ -1,0 +1,42 @@
+{
+  "name": "botmanagergui",
+  "version": "1.0.0",
+  "description": "A Minecraft bot manager GUI using Electron and Mineflayer",
+  "author": "AshuNotFound1234",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "dependencies": {
+    "mineflayer": "4.7.0"
+  },
+  "devDependencies": {
+    "electron": "29.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.ashunotfound1234.botmanagergui",
+    "productName": "BotManagerGUI",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/*/{test,__tests__,docs,examples}/**"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "BotManagerGUI"
+    },
+    "mac": null,
+    "linux": null
+  }
+}
