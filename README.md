@@ -7,7 +7,7 @@ You can send messages, automate tasks, and control bots from a simple and clean 
 
 ## Setup
 1. Clone the repository:
-   git clone https://github.com/YourUsername/BotManagerGUI.git
+   git clone https://github.com/AshuNotFound1234/BotManagerGUI.git
 2. Install dependencies inside the folder:
    npm install
 3. Run the app:
